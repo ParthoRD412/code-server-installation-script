@@ -40,4 +40,4 @@ $ ./code-server-installation.sh
 ```
 
 
-Well done! Your are good to go!1
+Well done! Your are good to go!
