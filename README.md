@@ -1,2 +1,7 @@
-# code-server-installation-script
-This is to install the code server version of VS code in your device
+# Pre-requisites
+You need git and wget installed before hand
+
+Installing git to the terminal : 
+'''sh
+$ sudo apt install git -y
+'''
