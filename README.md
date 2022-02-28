@@ -1,5 +1,6 @@
 # Pre-requisites
 You need git and wget installed before hand
+So go ahead and paste these codes in the terminal and hit enter
 
 Installing git to the terminal : 
 
