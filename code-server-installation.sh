@@ -1,4 +1,7 @@
+clear
 echo "This is a script to install Visual Studio code server version on your device and run it web browser"
+echo "make sure that you are connected to a stable internet connection"
+sleep 5
 sudo apt update
 sudo apt install figlet -y
 sudo apt install neofetch -y
@@ -18,8 +21,9 @@ sleep 5
 figlet Installing
 figlet VS CODE
 sleep 5
-wget https://github.com/coder/code-server/releases/download/v4.0.1/code-server_4.0.1_arm64.deb
-sudo apt install ./code-server_4.0.1_arm64.deb
+wget https://github.com/coder/code-server/releases/download/v4.0.1/code-server_4.1.0_arm64.deb
+sudo apt install ./code-server_4.1.0_arm64.deb
+rm code-server_4.1.0_arm64.deb
 clear
 echo "after the code server start"
 echo "please click on ctrl+c"
