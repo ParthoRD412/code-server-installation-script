@@ -40,5 +40,14 @@ Now run the script
 $ ./code-server-installation.sh
 ```
 
+Whenever you turn on ubuntu just type 
+```sh
+$ code-server
+```
+
+You will be asked for the password then run this!!
+```sh
+$ cat config/code-server/config.yaml
+```
 
 Well done! Your are good to go!
