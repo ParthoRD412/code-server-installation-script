@@ -1,37 +1,34 @@
 clear
-echo "This is a script to install Visual Studio code server version on your device and run it web browser"
-echo "make sure that you are connected to a stable internet connection"
+echo "This is a script to install Visual Studio Code Server on your device and run it in a web browser."
+echo "Make sure that you are connected to a stable internet connection."
 sleep 5
-sudo apt update
-sudo apt install figlet -y
-sudo apt install neofetch -y
-sudo apt install wget -y
-sudo apt install git -y
-sudo apt install openjdk-17-jdk -y
-sudo apt install python3 -y
-sudo apt install python-is-python3 -y
+
+sudo apt update && sudo apt install -y figlet neofetch wget git openjdk-17-jdk python3 python-is-python3
+
 clear
 neofetch
 sleep 5
-figlet This is made by
-figlet itzmrbrokenprogrammer
-echo "Follow me on instagram!"
-echo "@itzmrbrokenprogrammer"
+figlet "This is made by"
+figlet "vastavik_parth"
+echo "Follow me on Instagram!"
+echo "@vastavik_parth"
 sleep 5
-figlet Installing
-figlet VS CODE
+
+figlet "Installing"
+figlet "VS CODE"
 sleep 5
-wget https://github.com/coder/code-server/releases/download/v4.0.1/code-server_4.1.0_arm64.deb
-sudo apt install ./code-server_4.1.0_arm64.deb
-rm code-server_4.1.0_arm64.deb
+
+wget https://github.com/coder/code-server/releases/download/v4.17.1/code-server_4.17.1_arm64.deb && \
+sudo apt install -y ./code-server_4.17.1_arm64.deb && \
+rm code-server_4.17.1_arm64.deb
+
 clear
-echo "after the code server start"
-echo "please click on ctrl+c"
-echo "then type"
-echo "~/.config/code-server.config.yaml"
-echo "copy the password from there and then again type code-server"
-echo "open your favourite browser and type"
-echo "http://127.0.0.1:8080"
-echo "enter the copied password and click submit"
+echo "After Code-Server starts:"
+echo "1. Please click on Ctrl+C."
+echo "2. Then type: ~/.config/code-server.config.yaml"
+echo "3. Copy the password from there and then type 'code-server' again."
+echo "4. Open your favorite browser and type: http://127.0.0.1:8080"
+echo "5. Enter the copied password and click submit."
 sleep 5
+
 code-server
