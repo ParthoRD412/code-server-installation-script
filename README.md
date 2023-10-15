@@ -14,6 +14,11 @@ Installing wget to the terminal :
 $ sudo apt install wget -y
 ```
 
+Installing figlet to the terminal :
+
+```sh
+$ sudo apt install figlet -y
+```
 
 # Installing the code-server
 
